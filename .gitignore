@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+npm-debug.log*
+
+# variáveis sensíveis NÃO versionar
+.env
+.env.local
+.env.*.local
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Temp
+tmp/
+temp/

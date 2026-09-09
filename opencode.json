@@ -1,0 +1,71 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-6",
+  "small_model": "anthropic/claude-sonnet-4-6",
+  "default_agent": "build",
+  "share": "disabled",
+  "autoupdate": true,
+  "theme": {
+    "name": "tokyonight",
+    "mode": "dark"
+  },
+  "instructions": ["AGENTS.md"],
+  "skills": {
+    "paths": [".opencode/skills"]
+  },
+  "references": {},
+  "agent": {
+    "build": {
+      "color": "#1E1E2E"
+    },
+    "plan": {
+      "color": "#181825"
+    },
+    "general": {
+      "color": "#11111B"
+    },
+    "analista": {
+      "color": "#89B4FA"
+    },
+    "dev": {
+      "color": "#A6E3A1"
+    },
+    "reviewer": {
+      "color": "#F38BA8"
+    }
+  },
+  "command": {},
+  "provider": {
+    "anthropic": {}
+  },
+  "mcp": {
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "enabled": true,
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_TOKEN}"
+      }
+    }
+  },
+  "plugin": [],
+  "permission": {
+    "edit": "allow",
+    "bash": {
+      "git *": "allow",
+      "npm *": "allow",
+      "npx *": "allow",
+      "*": "ask"
+    },
+    "external_directory": {
+      "~/projects/**": "allow",
+      "*": "ask"
+    }
+  },
+  "formatter": true,
+  "lsp": true,
+  "experimental": {
+    "primary_tools": ["edit"],
+    "mcp_timeout": 30000
+  }
+}
