@@ -46,6 +46,11 @@
       "environment": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_TOKEN}"
       }
+    },
+    "pipedrive": {
+      "type": "remote",
+      "url": "https://mcp.pipedrive.ai/mcp",
+      "enabled": true
     }
   },
   "plugin": [],

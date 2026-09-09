@@ -29,6 +29,19 @@ Permissões necessárias no token:
 - `workflow` - Gerenciar workflows
 - `read:org` - Ler informações da organização
 
+## Integração Pipedrive (CRM)
+O ambiente se conecta ao CRM Pipedrive via MCP:
+
+- URL: `https://mcp.pipedrive.ai/mcp`
+- Autenticação: OAuth (login do Pipedrive na primeira conexão)
+- Ao iniciar o opencode, faça login no Pipedrive quando solicitado
+
+Capacidades:
+- Buscar deals, contatos e organizações
+- Criar e atualizar registros no CRM
+- Analisar pipeline e funil de vendas
+- Gerenciar atividades e notas
+
 ## Estrutura de Pastas
 ```
 .opencode/
